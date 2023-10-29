@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kotakbuku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Menyisipkan CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #e3f2fd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Bagian menu navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold" href="index.html">Kotakbuku</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bagian header -->
+    <div class="jumbotron jumbotron-fluid bg-dark text-white shadow">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Welcome to Kotakbuku</h1>
+            <p class="lead mb-4">Situs mengelola buku-buku Anda.</p>
+            <a href="login.html" class="btn btn-primary mr-1">Login</a>
+            <a href="register.html" class="btn btn-outline-light">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian isi konten -->
+    <div class="container card border-primary mb-5 px-5 pb-3">
+      <section class="text-justify" id="tentang">
+        <h2 class="font-weight-bold text-center my-4 pt-1">About us</h2>
+        <p>
+          Kotakbuku adalah situs untuk mengelola buku Anda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi quas obcaecati tempora suscipit officiis dolores expedita modi
+          ipsam, nobis dolore vitae enim veniam quidem quod ut officia temporibus totam id? Quaerat reiciendis sunt ullam sit rem animi architecto, deleniti debitis totam quas ipsum, accusamus
+          voluptatibus aut. Quas, laudantium fugit.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, reprehenderit mollitia odio dicta blanditiis fugit temporibus vero neque optio, consectetur repudiandae numquam incidunt iure
+          error! Magnam, dignissimos corrupti. Voluptatem, eveniet velit! Deleniti eligendi officiis cumque vero veniam qui magni accusamus voluptatum nemo incidunt, eos nesciunt? Doloribus mollitia
+          nesciunt eveniet, laudantium quasi dolorem reprehenderit ducimus, quam dolor aspernatur earum voluptatum.
+        </p>
+      </section>
+      <section class="row justify-content-center" id="kontak">
+        <div class="col-md-9 mb-4">
+          <h2 class="font-weight-bold text-center my-4">Contact us</h2>
+          <p class="text-center mx-auto mb-5">
+            Apakah Anda memiliki pertanyaan? Jangan ragu untuk menghubungi kami secara langsung. Tim kami akan menghubungi Anda kembali dalam hitungan jam untuk membantu Anda.
+          </p>
+          <form action="" method="POST">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="">Your name</label>
+                <input type="text" id="name" name="name" class="form-control" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="">Your email</label>
+                <input type="text" id="email" name="email" class="form-control" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <label for="subject" class="">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <label for="message">Your message</label>
+                <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+              </div>
+            </div>
+          </form>
+
+          <div class="text-center text-md-left">
+            <button type="submit" class="btn btn-primary mt-4 px-5">Kirim</button>
+          </div>
+          <div class="status"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bagian footer -->
+    <footer class="bg-primary text-white text-center text-lg-start p-3">&copy; 2023 Copyright Kotakbuku</footer>
+
+    <!-- Menyisipkan JQuery dan Javascript Bootstrap -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

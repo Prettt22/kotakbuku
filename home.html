@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kotakbuku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Menyisipkan CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #e3f2fd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Bagian menu navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold" href="home.html">Kotakbuku</a>
+        <a class="text-white text-decoration-none" href="index.html">Logout</a>
+      </div>
+    </nav>
+
+    <!-- Bagian isi konten -->
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-8 col-11 mb-4">
+          <div class="card border border-primary mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-secondary text-center mb-4">🔍 Cari Buku</h5>
+              <form action="" method="get" class="form-group d-flex align-items-center">
+                <label for="judulBuku">Judul</label>
+                <input type="text" class="form-control ml-3 mr-1" id="judulBuku" />
+                <button type="submit" class="btn btn-primary">Cari</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card border border-primary mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-secondary text-center mb-4">&#128213; Buku Belum Dibaca</h5>
+              <div class="border border-primary rounded mb-2 p-2">
+                <h5 class="text-primary">1001 Fakta-fakta Unik Sepak Bola</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="ml-2">
+                    <p class="mb-0">Penerbit: Apa</p>
+                    <p class="mb-0">Penulis: Siapa</p>
+                    <p class="mb-0">Tahun: Berapa</p>
+                  </div>
+                  <div class="d-flex mr-2">
+                    <button class="btn btn-outline-primary btn-lg py-0 px-2 font-weight-bold mr-2">&#9998;</button>
+                    <button class="btn btn-outline-success btn-lg py-0 px-2 font-weight-bold mr-2">&#10003;</button>
+                    <button class="btn btn-outline-danger btn-lg py-0 px-2 font-weight-bold">&#10539;</button>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-primary rounded mb-2 p-2">
+                <h5 class="text-primary">1001 Fakta-fakta Unik Basket</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="ml-2">
+                    <p class="mb-0">Penerbit: Apa</p>
+                    <p class="mb-0">Penulis: Siapa</p>
+                    <p class="mb-0">Tahun: Berapa</p>
+                  </div>
+                  <div class="d-flex mr-2">
+                    <button class="btn btn-outline-primary btn-lg py-0 px-2 font-weight-bold mr-2">&#9998;</button>
+                    <button class="btn btn-outline-success btn-lg py-0 px-2 font-weight-bold mr-2">&#10003;</button>
+                    <button class="btn btn-outline-danger btn-lg py-0 px-2 font-weight-bold">&#10539;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border border-primary">
+            <div class="card-body">
+              <h5 class="card-title text-secondary text-center mb-4">&#128215; Buku Sudah Dibaca</h5>
+              <div class="border border-primary rounded mb-2 p-2">
+                <h5 class="text-primary">Temuan Populer Di Dunia Modern</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="ml-2">
+                    <p class="mb-0">Penerbit: Apa</p>
+                    <p class="mb-0">Penulis: Siapa</p>
+                    <p class="mb-0">Tahun: Berapa</p>
+                  </div>
+                  <div class="d-flex mr-2">
+                    <button class="btn btn-outline-primary btn-lg py-0 px-2 font-weight-bold mr-2">&#9998;</button>
+                    <button class="btn btn-outline-info btn-lg py-0 px-2 font-weight-bold mr-2">&#8634;</button>
+                    <button class="btn btn-outline-danger btn-lg py-0 px-2 font-weight-bold">&#10539;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-8 col-11 mb-4 order-lg-last order-first">
+          <div class="card border border-primary">
+            <div class="card-body">
+              <h5 class="card-title text-secondary text-center"><span class="h3">&#128218;</span> Masukkan Buku Baru</h5>
+              <form>
+                <div class="form-group">
+                  <label for="judulBuku">Judul</label>
+                  <input type="text" class="form-control" id="judulBuku" />
+                </div>
+                <div class="form-group">
+                  <label for="penerbit">Penerbit</label>
+                  <input type="text" class="form-control" id="penerbit" />
+                </div>
+                <div class="form-group">
+                  <label for="penulis">Penulis</label>
+                  <input type="text" class="form-control" id="penulis" />
+                </div>
+                <div class="form-group">
+                  <label for="tahun">Tahun</label>
+                  <input type="number" class="form-control" id="tahun" />
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="statusBaca" />
+                  <label class="form-check-label" for="statusBaca">Selesai Dibaca</label>
+                </div>
+                <div class="text-center mt-4">
+                  <button type="submit" class="btn btn-primary px-5">Simpan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian footer -->
+    <footer class="bg-primary text-white text-center text-lg-start p-3">
+        &copy; 2023 Copyright Kotakbuku
+    </footer>
+
+    <!-- Menyisipkan JQuery dan Javascript Bootstrap -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
